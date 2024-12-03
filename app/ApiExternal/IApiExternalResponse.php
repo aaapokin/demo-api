@@ -20,8 +20,6 @@ interface IApiExternalResponse
     public function getUrlRequest(): string;
 
     public function getPayloadRequest(): array;
-
-    public function isOk(): bool;
     public function getErrorResponse(): string;
 
 }

@@ -103,5 +103,24 @@ abstract class AResponse implements IResponse
         return $this->isSkip;
     }
 
+    public function isOk(): bool
+    {
+        if (!$this->response->getStatus()===200){
+            return true;
+        }
+        return false;
+    }
+
+    public function gerError(): string
+    {
+        return $this->response->getErrorResponse();
+    }
+
+    public function getStatus(): int
+    {
+        return $this->response->getStatus();
+    }
+
+
 
 }

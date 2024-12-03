@@ -14,4 +14,12 @@ interface  IResponse
     public function isValid():bool;
     public function isSkip():bool;
 
+    public function isOk():bool;
+
+    public function getStatus():int;
+
+    public function gerError():?string;
+
+
+
 }

@@ -58,14 +58,6 @@ class ApiExternalResponse implements IApiExternalResponse
         return $this->status;
     }
 
-    public function isOk(): bool
-    {
-        if ($this->status === 200) {
-            return true;
-        }
-        return false;
-    }
-
     public function getErrorResponse(): string
     {
         return $this->errorResponse;
