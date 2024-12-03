@@ -6,3 +6,5 @@ require __DIR__.'/vendor/autoload.php';
 
 //
 (new \app\ApiExternal\ApiAutoStat())->getMarks(new GetMarksRequest());
+
+(new \app\ApiExternal\ApiAutoStat())->getMarksViaQUEUE(new GetMarksRequest());
