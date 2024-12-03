@@ -4,11 +4,11 @@ namespace app\ApiExternal;
 
 use app\ApiExternal\enums\Formats;
 use app\ApiExternal\enums\Methods;
-use app\ApiExternal\Requests\ARequest;
 use app\ApiExternal\Requests\IRequest;
+use app\ApiExternal\Responses\ApiExternalResponse;
 use app\ApiExternal\Responses\IResponse;
-use app\helpers\Log\Log;
 use app\Env;
+use app\helpers\Log\Log;
 use app\jobs\SendApiExternalPackageJob;
 use app\jobs\SendRmqPackageJob;
 use GuzzleHttp\Client;

@@ -2,7 +2,6 @@
 
 namespace app\ApiExternal\Responses;
 
-use app\ApiExternal\ApiExternalResponse;
 use app\ApiExternal\IApiExternalResponse;
 use app\helpers\Log\Log;
 use yii\helpers\ArrayHelper;

@@ -1,10 +1,8 @@
 <?php
 
-namespace app\ApiExternal;
+namespace app\ApiExternal\Responses;
 
 use app\ApiExternal\IApiExternalResponse;
-use app\ApiExternal\Requests\IRequest;
-use app\ApiExternal\Responses\IResponse;
 
 class ApiExternalResponse implements IApiExternalResponse
 {
