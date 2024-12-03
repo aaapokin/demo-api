@@ -2,8 +2,6 @@
 
 namespace app\ApiExternal\Responses;
 
-use app\ApiExternal\IApiExternalResponse;
-
 class ApiExternalResponse implements IApiExternalResponse
 {
     public function __construct(

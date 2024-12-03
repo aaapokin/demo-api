@@ -2,15 +2,15 @@
 
 namespace app\ApiExternal\Requests;
 
+use app\ApiExternal\ALKRequest;
 use app\ApiExternal\enums\Formats;
 use app\ApiExternal\enums\Methods;
-use app\ApiExternal\IApiExternalResponse;
 use app\ApiExternal\Listeners\IListener;
+use app\ApiExternal\Responses\IApiExternalResponse;
 use app\ApiExternal\Responses\IResponse;
-use App\Entity\Lead\CommonLead;
-use app\ApiExternal\ALKRequest;
-use App\Utils\Phone\PhoneModelRU;
 use App\DI;
+use App\Entity\Lead\CommonLead;
+use App\Utils\Phone\PhoneModelRU;
 
 interface  IRequest
 {

@@ -2,12 +2,9 @@
 
 namespace app\ApiExternal\Requests\AutoStat;
 
-use app\ApiExternal\enums\Formats;
-use app\ApiExternal\enums\Methods;
-use app\ApiExternal\IApiExternalResponse;
 use app\ApiExternal\Listeners\IListener;
-use app\ApiExternal\Responses\AResponse;
 use app\ApiExternal\Responses\AutoStat\ValuesResponse;
+use app\ApiExternal\Responses\IApiExternalResponse;
 use app\ApiExternal\Responses\IResponse;
 
 class GetMarksRequest extends AAutoStatRequest
