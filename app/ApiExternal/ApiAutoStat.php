@@ -46,12 +46,7 @@ class ApiAutoStat extends AApiExternal
     public function getMarks(GetMarksRequest $getMarksRequest): ValuesResponse
     {
         return $this->cache('ApiAutoStat::'.__FUNCTION__.$getMarksRequest->getSHA1(), function () use ($getMarksRequest) {
-            if (!$response = $this->request($getMarksRequest)) {
-                $this->resetToken();
-                sleep(3);
-                $response = $this->request($getMarksRequest);
-            }
-            return $response;
+            return $this->request($getMarksRequest);
         });
     }
 
